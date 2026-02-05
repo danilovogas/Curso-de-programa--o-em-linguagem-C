@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1770320700 source:f:\curso linguagem c\seção 2\seção 2 - introdução a c\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1770321222 source:f:\curso linguagem c\seção 2\seção 2 - introdução a c\variaveis.c
+	<stdio.h>
+	<stdlib.h>
+
