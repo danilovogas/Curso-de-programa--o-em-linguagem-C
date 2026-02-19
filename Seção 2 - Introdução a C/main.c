@@ -3,8 +3,50 @@
 
 int main(){
 
-    //Lendo caracteres com getchar()
+    //Como ter dois caracteres e limpar o buffer do teclado com espaço
+    char a, b;
+
+    printf("\n\tDigite dois caracteres (a e b): ");
+    scanf("%c %c", &a, &b);
+    printf("\n\tOs caracteres sao: %c e %c\n", a, b);
+    printf("\n\ta = %d\tb = %d\n", a, b);
+
+
+
+   //Problemas ao ler caractere. Como ler um caractere depois de outros dados?
     char sexo;
+    int idade;
+    float peso, altura;
+
+    printf("\n\tDigite sua idade, seu peso, sua altura e seu sexo(f ou m) ");
+    scanf("%d%f%f%c", &idade, &peso, &altura, &sexo);
+    printf("\n\tIdade: %d\n\tPeso: %f\n\tAltura: %f\n\tSexo: %c\n", idade, peso, altura, sexo);
+
+
+   //Como ler vários valores do teclado com a função scanf()
+    //int idade;
+    //float peso, altura;
+
+    printf("\n\tDigite sua idade, seu peso e sua altura? ");
+    scanf("%d %f %f", &idade, &peso, &altura);
+    printf("\n\tIdade: %d\tPeso: %f\tAltura: %f\n", idade, peso, altura);
+
+   //ler caracteres do teclado com a função fgetc
+   //char sexo;
+
+   printf("\n\tDigite f para feminino e m para masculino: ");
+   sexo = fgetc(stdin);
+   printf("\n\tSexo: %c\n", sexo);
+
+   //Lendo caracteres do teclado com a função getc()
+    //char sexo = 'a';
+
+    printf("\n\tDigite f para feminino e m para masculino: ");
+    sexo = getc(stdin);
+    printf("\n\tSexo: %c\n", sexo);
+
+    //Lendo caracteres com getchar()
+    //char sexo;
 
     printf("\n\tDigite f para feminino ou m para masculino: ");
     sexo = getchar();
@@ -20,7 +62,7 @@ int main(){
     printf("\n\tSexo digitado: %c\n", sexo);
 
     //lendo números reais
-    float peso = 75.380;
+    //float peso = 75.380;
 
     printf("\n\tDigite seu peso: ");
     scanf("%f", &peso);
