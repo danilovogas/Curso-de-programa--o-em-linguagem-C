@@ -3,8 +3,58 @@
 
 int main(){
 
+    /*
+    Aumentando o espaço de memória para um inteiro com o operador long? %lld(long long decimal) ou %lli (long long integer)
+    */
+
+    long long int valor;
+    long long int a, b, c;
+
+   a = 2147483647;
+   b = 1;
+
+   c = a + b;
+   printf("\n\ta = %lld\n\tb = %lld\n\tc = %lli\n\n\n", a, b, c);
+
+    printf("\n\tTamanho: %d\n\n", sizeof(valor));
+
+   //Somei dois números inteiros positivos e o resultado ficou negativo, por quê?
+   //int a, b, c;
+
+   a = 2147483647;
+   b = 1;
+
+   c = a + b;
+   printf("\n\ta = %d\n\tb = %d\n\tc = %d\n\n\n", a, b, c);
+
+
+   //Reduzindo consumo de memória com o operador long
+   //short valor = 10;
+   printf("\n\tValor: %d\tTamanho: %d\n\n",valor, sizeof(valor));
+
+
+
+    /*
+        Como descobrir o tamanho em memória de cada tipo de dado com o operador sizeof?
+        sizeof x; onde x é uma variável, e;
+        sizeof(tipo); substituindo a palavra tipo pelo tipo de dado cujo quantidade de memória queremos descobrir.
+    */
+    //int a;
+   // char b;
+    //float c;
+
+    printf("\n\tint = %d\n", sizeof(int));
+    printf("\n\tchar = %d\n", sizeof(char));
+    printf("\n\tfloat = %d\n", sizeof(float));
+    printf("\n\tdouble = %d\n", sizeof(double));
+
+    printf("\n\tint = %d\n", sizeof a);
+    printf("\n\tchar = %d\n", sizeof b);
+    printf("\n\tfloat = %d\n", sizeof c);
+
+
     //Como ter dois caracteres e limpar o buffer do teclado com espaço
-    char a, b;
+    //char a, b;
 
     printf("\n\tDigite dois caracteres (a e b): ");
     scanf("%c %c", &a, &b);
@@ -19,7 +69,7 @@ int main(){
     float peso, altura;
 
     printf("\n\tDigite sua idade, seu peso, sua altura e seu sexo(f ou m) ");
-    scanf("%d%f%f%c", &idade, &peso, &altura, &sexo);
+    //scanf("%d%f%f%c", &idade, &peso, &altura, &sexo);
     printf("\n\tIdade: %d\n\tPeso: %f\n\tAltura: %f\n\tSexo: %c\n", idade, peso, altura, sexo);
 
 
